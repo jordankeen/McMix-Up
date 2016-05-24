@@ -1,0 +1,252 @@
+@import 'setup';
+
+// mcdonalds yellow: #FDC82F
+// mcdonalds red: #D52B1E
+
+body {
+	background: rgba(23,22,22,1);
+}
+form {
+	margin: 0 auto;
+}
+header {
+	padding: 30px 15px 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+h2 {
+	color: ivory;
+	font-family: arial;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 32px;
+	text-align: center;
+}
+.title-red {
+	color: #D52B1E;
+}
+.mlogo {
+	text-align: center;
+}
+.mlogo img {
+	max-width: 22%;
+	margin: 0 auto;
+}
+a  {
+	text-decoration: none;
+	&:focus {
+		outline: none;
+	}
+}
+.section-one {
+	padding: 30px 0 10px;
+	padding-bottom: 10px;
+}
+.section-two {
+	padding: 20px 15px 40px;
+}
+header h1 {
+	color: #FDC82F;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 75px;
+	margin-top: 0;
+}
+.begin {
+	margin: 0 auto 50px;
+	background: #FDC82F;
+	color: rgba(23,22,22,1);
+	padding: 18px 35px;
+	width: 150px;
+	border: none;
+	font-size: 20px;
+	display: block;
+	outline: transparent;
+	transition: background 0.4s, color 0.4s;
+	&:hover, &:focus {
+		background: #D52B1E;
+		color: ivory;
+	}
+}
+.question1 {
+	max-width: 550px;
+	padding: 2% 0 0;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+}
+.label1 {
+	padding: 18% 0;
+	text-align: center;
+	width: 44%;
+	margin-bottom: 5%;
+	color: #FDC82F;
+	text-transform: uppercase;
+	font-family: helvetica;
+	letter-spacing: 2px;
+	background: #D52B1E;
+	cursor: pointer;
+	&:hover {
+		background: #FDC82F;
+		color: black;
+	}
+}
+.label1.selected {
+	background: #FDC82F;
+	color: rgba(23,22,22,1);
+}
+.question2 {
+	max-width: 730px;
+	margin: 0 auto;
+	padding: 16px 0;
+}
+.label2 {
+	display: block;
+	margin-bottom: 22px;
+	color: rgba(23,22,22,1);
+	background: #FDC82F;
+	padding: 25px 42px;
+	letter-spacing: 1px;
+	border-radius: 5px;
+	line-height: 1.4;
+	transition: color 0.3s, background 0.3s;
+	cursor: pointer;
+	&:hover {
+		background: #D52B1E;;
+		color: #FDC82F;
+	}
+}
+input[type="radio"] {
+	display: none;
+}
+.submit-button-container {
+	padding: 25px 0 125px;
+	text-align: center;
+}
+.submit-button {
+	background: #D52B1E;
+	color: #FDC82F;
+	letter-spacing: 4px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 10px solid ivory;
+	transition: background 0.4s;
+	&:hover {
+		background: rgba(23,22,22,1);
+	}
+	&:focus {
+		outline: transparent;
+		border: 10px solid ivory;
+	}
+}
+footer {
+	background: #FDC82F;
+	padding: 15px 0;
+	color: rgba(23,22,22,1);
+	display: flex;
+	justify-content: space-around;
+	p {
+		font-size: 10px;
+	}
+}
+.play-again {
+	color: ivory;
+	padding: 8px;
+	background: #D52B1E;
+	position: absolute; 
+	bottom: 10px;
+	right: 10px;
+}
+.mc-mix {
+	margin: 0 auto;
+	display: none;
+	h2 {
+		margin: 0 auto;
+		color: rgba(23, 22, 22, 1);
+		font-size: 42px;
+		text-transform: none;
+		font-family: arial black;
+		letter-spacing: -3px;
+		text-align: left;
+	}
+}
+.picture9-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0;
+	h2 {
+		color: #D52B1E;
+		margin: 0 auto;
+	}
+	h3 {
+		color: #FDC82F;
+	}
+}
+.picture1-box {
+	background: url(../images/mcmix-3-copy.jpg);
+}
+.picture2-box {
+	background: url(../images/mcmix-6-copy.jpg);
+}
+.picture3-box {
+	background: url(../images/mcmix-2-copy.jpg);
+}
+.picture4-box {
+	background: url(../images/mcmix-7-copy.jpg);
+}
+.picture5-box {
+	background: url(../images/mcmix-5-copy.jpg);
+}
+.picture6-box {
+	background: url(../images/mcmix-4-copy.jpg);
+}
+.picture7-box {
+	background: url(../images/mcmix.jpg);
+}
+.picture8-box {
+	background: url(../images/mcbench.jpeg);
+}
+.box {
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+	padding: 15px 0 0 28px;
+	height: 100vh;
+	width: 100vw;
+	max-width: 1440px;
+	max-height: 900px;
+	position: relative;
+}
+.picture8-box {
+	padding: 0;
+	h2 {
+		color: ivory;
+		text-align: center;
+		line-height: 1.0;
+	}
+}
+.black-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(23,22,22,0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.damn-red {
+	color: #D52B1E;
+}
+@import 'media-query';
+
+

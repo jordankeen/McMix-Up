@@ -57,6 +57,8 @@ header h1 {
 }
 .begin {
 	margin: 0 auto 50px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	background: #FDC82F;
 	color: rgba(23,22,22,1);
 	padding: 18px 35px;
@@ -68,7 +70,7 @@ header h1 {
 	transition: background 0.4s, color 0.4s;
 	&:hover, &:focus {
 		background: #D52B1E;
-		color: ivory;
+		color: #FDC82F;
 	}
 }
 .question1 {
@@ -90,6 +92,7 @@ header h1 {
 	letter-spacing: 2px;
 	background: #D52B1E;
 	cursor: pointer;
+	transition: background 0.4s, color 0.4s;
 	&:hover {
 		background: #FDC82F;
 		color: black;
@@ -111,9 +114,8 @@ header h1 {
 	background: #FDC82F;
 	padding: 25px 42px;
 	letter-spacing: 1px;
-	border-radius: 5px;
 	line-height: 1.4;
-	transition: color 0.3s, background 0.3s;
+	transition: color 0.4s, background 0.4s;
 	cursor: pointer;
 	&:hover {
 		background: #D52B1E;;
@@ -131,8 +133,8 @@ input[type="radio"] {
 	background: #D52B1E;
 	color: #FDC82F;
 	letter-spacing: 4px;
-	width: 120px;
-	height: 120px;
+	width: 140px;
+	height: 140px;
 	border-radius: 50%;
 	border: 10px solid ivory;
 	transition: background 0.4s;
@@ -159,20 +161,22 @@ footer {
 	padding: 8px;
 	background: #D52B1E;
 	position: absolute; 
-	bottom: 10px;
-	right: 10px;
+	bottom: 15px;
+	right: 15px;
 }
 .mc-mix {
 	margin: 0 auto;
 	display: none;
 	h2 {
-		margin: 0 auto;
+		margin: 0 0 0 25px;
 		color: rgba(23, 22, 22, 1);
 		font-size: 42px;
 		text-transform: none;
 		font-family: arial black;
-		letter-spacing: -3px;
+		letter-spacing: -2px;
 		text-align: left;
+		max-width: 400px;
+		line-height: 1.1;
 	}
 }
 .picture9-box {
@@ -181,6 +185,7 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	padding: 0;
+	text-align: center;
 	h2 {
 		color: #D52B1E;
 		margin: 0 auto;
@@ -217,7 +222,7 @@ footer {
 	background-position: center;
 	background-size: cover;
 	margin: 0 auto;
-	padding: 15px 0 0 28px;
+	padding-top: 15px;
 	height: 100vh;
 	width: 100vw;
 	max-width: 1440px;
@@ -230,6 +235,32 @@ footer {
 		color: ivory;
 		text-align: center;
 		line-height: 1.0;
+		max-width: 680px;
+	}
+}
+.details {
+	list-style-type: none;
+	padding-right: 0;
+	background: rgba(255,255,255,0.83);
+	display: inline-block;
+	padding: 5px 15px;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	max-width: 180px;
+	color: black;
+	margin:0;
+	li {
+		margin: 10px 0;
+		font-size: 14px;
+		letter-spacing: 1px;
+		border-bottom: 2px solid #D52B1E;
+		padding-bottom: 10px;
+		line-height: 1.3;
+	}
+	.details-title {
+		font-size: 15px;
+		font-weight: bold;
 	}
 }
 .black-overlay {

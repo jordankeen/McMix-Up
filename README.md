@@ -16,4 +16,3 @@ Tools used:
 - Sass
 - Responsive Design
 
-May 2016

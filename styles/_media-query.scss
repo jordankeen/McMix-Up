@@ -20,9 +20,10 @@
 @media screen and (max-width: 480px) {
 	.mc-mix {
 		h2 {
-			font-size: 22px;
+			font-size: 35px;
 			line-height: 1.0;
-			letter-spacing: 1px;
+			letter-spacing: -2px;
+			font-family: arial;
 		}
 	}
 	.box {
@@ -32,11 +33,17 @@
 	}
 	.details {
 		max-width: 160px;
+		padding: 0 15px;
 		.details-title {
 			font-size: 13px;
 		}
 		li {
-			font-size: 11px;
+			font-size: 10px;
+			line-height: 1.2;
+			padding-bottom: 6px;
+			.details-title {
+				font-size: 11px;
+			}
 		}
 	}
 }
